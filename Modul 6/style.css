@@ -1,0 +1,128 @@
+/*Costum Button*/
+.costum-btn:hover{
+    border-width: 1px;
+    border-color: black;
+}
+
+.costum-btn{
+    color: gray;
+}
+
+/*Costum Button 2*/
+.costum-btn-2:hover{
+    border-width: 1px;
+    border-radius: 45px;
+    border-color: black;
+    color: black;
+}
+
+.costum-btn-2{
+    color: grey;
+    background: none;
+    border-width: 0;
+}
+
+.costum-btn-2-active{
+    border-radius: 45px;
+    border-width: 1px;
+    background: none;
+
+}
+
+/*Costum Image*/
+.costum-img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+/*Costum Border*/
+
+.corner-border {
+  background-color: black; 
+  z-index: 10;
+}
+
+.corner-border.top-left::before,
+.corner-border.top-left::after {
+  content: "";
+  position: absolute;
+  background-color: black; 
+}
+
+.corner-border.top-left::before { 
+  top: 0;
+  left: 0;
+  width: 60px; 
+  height: 8px; 
+}
+
+.corner-border.top-left::after { 
+  top: 0;
+  left: 0;
+  width: 8px;  
+  height: 60px; 
+}
+
+.corner-border.top-right::before,
+.corner-border.top-right::after {
+  content: "";
+  position: absolute;
+  background-color: black; 
+}
+
+.corner-border.top-right::before { 
+  top: 0;
+  right: 0;
+  width: 60px; 
+  height: 8px; 
+}
+
+.corner-border.top-right::after { 
+  top: 0;
+  right: 0;
+  width: 8px;  
+  height: 60px; 
+}
+
+.corner-border.bottom-right::before,
+.corner-border.bottom-right::after {
+  content: "";
+  position: absolute;
+  background-color: black; 
+}
+
+.corner-border.bottom-right::before { 
+  bottom: 0;
+  right: 0;
+  width: 60px; 
+  height: 8px; 
+}
+
+.corner-border.bottom-right::after { 
+  bottom: 0;
+  right: 0;
+  width: 8px;  
+  height: 60px; 
+}
+
+.corner-border.bottom-left::before,
+.corner-border.bottom-left::after {
+  content: "";
+  position: absolute;
+  background-color: black; 
+}
+
+.corner-border.bottom-left::before { 
+  bottom: 0;
+  left: 0;
+  width: 60px; 
+  height: 8px; 
+}
+
+.corner-border.bottom-left::after { 
+  bottom: 0;
+  left: 0;
+  width: 8px;  
+  height: 60px; 
+}

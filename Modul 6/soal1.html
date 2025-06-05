@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soal 1 Modul 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+      /*Costum Button*/
+      .costum-btn:hover{
+          border-width: 1px;
+          border-color: black;
+      }
+
+      .costum-btn{
+          color: gray;
+      }
+
+      /*Costum Button 2*/
+      .costum-btn-2:hover{
+          border-width: 1px;
+          border-radius: 45px;
+          border-color: black;
+          color: black;
+      }
+
+      .costum-btn-2{
+          color: grey;
+          background: none;
+          border-width: 0;
+      }
+
+      .costum-btn-2-active{
+          border-radius: 45px;
+          border-width: 1px;
+          background: none;
+      }
+
+      /*Costum Image*/
+      .costum-img{
+          width: 250px; 
+          height: 200px; 
+          object-fit: cover;
+      }
+
+      /*Costum Border*/
+
+      .corner-border {
+        background-color: black; 
+        z-index: 10;
+      }
+
+      .corner-border.top-left::before,
+      .corner-border.top-left::after {
+        content: "";
+        position: absolute;
+        background-color: black; 
+      }
+
+      .corner-border.top-left::before { 
+        top: 0;
+        left: 0;
+        width: 60px; 
+        height: 8px; 
+      }
+
+      .corner-border.top-left::after { 
+        top: 0;
+        left: 0;
+        width: 8px;  
+        height: 60px; 
+      }
+
+      .corner-border.top-right::before,
+      .corner-border.top-right::after {
+        content: "";
+        position: absolute;
+        background-color: black; 
+      }
+
+      .corner-border.top-right::before { 
+        top: 0;
+        right: 0;
+        width: 60px; 
+        height: 8px; 
+      }
+
+      .corner-border.top-right::after { 
+        top: 0;
+        right: 0;
+        width: 8px;  
+        height: 60px; 
+      }
+
+      .corner-border.bottom-right::before,
+      .corner-border.bottom-right::after {
+        content: "";
+        position: absolute;
+        background-color: black; 
+      }
+
+      .corner-border.bottom-right::before { 
+        bottom: 0;
+        right: 0;
+        width: 60px; 
+        height: 8px; 
+      }
+
+      .corner-border.bottom-right::after { 
+        bottom: 0;
+        right: 0;
+        width: 8px;  
+        height: 60px; 
+      }
+
+      .corner-border.bottom-left::before,
+      .corner-border.bottom-left::after {
+        content: "";
+        position: absolute;
+        background-color: black; 
+      }
+
+      .corner-border.bottom-left::before { 
+        bottom: 0;
+        left: 0;
+        width: 60px; 
+        height: 8px; 
+      }
+
+      .corner-border.bottom-left::after { 
+        bottom: 0;
+        left: 0;
+        width: 8px;  
+        height: 60px; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <!--Corner Border-->
+      <span class="fixed-top fixed-bottom">
+        <div class="corner-border bottom-right"></div>
+        <div class="corner-border top-left"></div>
+        <div class="corner-border bottom-left"></div>
+        <div class="corner-border top-right"></div>
+      </span>
+      
+      <!--Navbar-->
+      <nav class="nav px-5 py-3 d-flex justify-content-between" style="background-color: #e1e9ee; font-family: 'Times New Roman', Times, serif;" data-bs-theme="light">
+          <h1><b>JPhotography</b></h1>
+          <div class="d-flex">
+              <button class="btn costum-btn active mx-2"><b>HOME</b></button>
+              <button class="btn costum-btn mx-2"><b>ABOUT ME</b></button>
+              <button class="btn costum-btn mx-2"><b>PORTOFOLIO</b></button>
+              <button class="btn costum-btn mx-2"><b>CONTACT</b></button>
+          </div>
+      </nav>
+
+      <!--About Section-->
+      <div class="my-5 text-center" style="font-family: 'Times New Roman', Times, serif;">
+        <h3><b>Hi. Hello.. I Am Guntur...!</b></h3>
+        <h3><b>I Travel Around The World To Get The Best Photos..!</b></h3>
+        <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
+      </div>
+
+      <!--Content Button Section-->
+      <div class="d-flex justify-content-center my-2 px-5" style="font-family: 'Times New Roman', Times, serif;">
+        <button class="costum-btn-2-active mx-2 py-2 px-3"><b>All</b></button>
+        <button class="costum-btn-2 mx-2 py-2 px-3" ><b>Landscape</b></button>
+        <button class="costum-btn-2 mx-2 py-2 px-3"><b>Potrait</b></button>
+        <button class="costum-btn-2 mx-2 py-2 px-3"><b>Product</b></button>
+      </div>
+
+      <!--Contect Section-->
+      <div>
+        <div class="d-flex justify-content-center my-2">
+          <img src="01.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="02.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="03.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="04.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+        </div>
+        <div class="d-flex justify-content-center my-2">
+          <img src="05.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="06.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="07.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="08.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+        </div>
+        <div class="d-flex justify-content-center my-2">
+          <img src="09.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="10.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="11.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="12.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+        </div>
+        <div class="d-flex justify-content-center my-2">
+          <img src="13.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="14.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="15.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+          <img src="16.jpg" class="ratio ratio-1x1 mx-1 costum-img" >
+        </div>
+      </div>
+
+      <!--Spacing-->
+      <div class="mb-5">
+        <br/>
+        <br/>
+        <br/>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer text-center" style="font-family: 'Times New Roman', Times, serif;">
+        <p style="font-size: 35px; margin-bottom: 0px;"><b>JPhotography</b></p>
+        <p style="color: grey;">&copy; Copyright 2019. All Rights Reserved</p>
+        <div class="d-flex justify-content-center my-2">
+          <img src="dribbble.png" style="width: 25px;" class="mx-1">
+          <img src="behance.png" style="width: 25px;" class="mx-1">
+          <img src="instagram.png" style="width: 25px;" class="mx-1">
+          <img src="500px.png" style="width: 25px;" class="mx-1">
+          <img src="flickr.png" style="width: 25px;" class="mx-1">
+          <img src="facebook.png" style="width: 25px;" class="mx-1">
+          <img src="twitter.png" style="width: 25px;" class="mx-1">
+        </div>
+      </footer>
+
+      <!--Spacing-->
+      <div class="mb-5">
+        <br/>
+        <br/>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
